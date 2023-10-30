@@ -11,7 +11,7 @@ public class Subarrs
         HashSet<Integer> hs = new HashSet<Integer>();
         for(int i=0;i<nums.size();i++){
             for(int j=i;j<nums.size();j++){
-                for(int k=i;k<j;k++){
+                for(int k=i;k<=j;k++){
                     hs.add(nums.get(k));
                 }
                 sum = sum+hs.size()*hs.size();
